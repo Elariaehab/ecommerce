@@ -5,9 +5,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    background-image: url(./images/photo_5994772084988953083_y.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+a , a:hover{
+  text-decoration: none;
+  color: black;
+
 }
