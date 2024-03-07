@@ -46,6 +46,9 @@ export default function Navbar() {
         <li className="nav-item">
           <Link className="nav-link" to="/AllOrders">All Orders</Link>
         </li>
+        <li className="nav-item">
+                  <Link className="nav-link" to="/wishlist">Wishlist</Link>
+                </li>
         </>
         ):( "" 
         )}

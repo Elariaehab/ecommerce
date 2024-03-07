@@ -11,6 +11,7 @@ import { cartContext } from '../../Context/Auth/Cart/Cart';
 
 export default function Home() {
   const {addProductToCart} = useContext(cartContext);
+  const[wishListStatus, updateWishListStatus]=useState('')
   
 async function getAllProducts(){
   return await axios.get("https://ecommerce.routemisr.com/api/v1/products")
@@ -52,6 +53,29 @@ async function getAllProducts(){
     />
     </div>
   }
+
+  async function addToWishList(id){
+    try {
+      let {data} = await axios.post('https://route-ecommerce.onrender.com/api/v1/wishlist',{productId:id},{
+        headers:{
+          token: localStorage.getItem('tkn')
+        }
+      })
+      console.log(data);
+      if(data.status=='success'){
+        updateWishListStatus('success')
+        toast.success(data.message,{
+          duration:2000,
+        })
+      }
+  
+  
+    } catch (error) {
+      
+    }
+  
+  
+  }
   return (
   <>
   <div className='container pt-5'>
@@ -69,9 +93,17 @@ async function getAllProducts(){
         <p><span><i className='fa-solid fa-star text-warning'></i></span> {product.ratingsAverage}</p>
        </div>
       </Link>
+     <div className="row">
+      <div className="col-md-9">
       <button onClick={()=> {
         addProduct(product._id)
       }} className='btn btn-success w-100'>ADD TO CART</button>
+      </div>
+      <div className="col-md-3">
+      <button onClick={()=>addToWishList(product.id)} className={`btn `}><i class="fa-solid fa-heart-circle-plus" style={{color:'#c23328', fontSize:'25px'}}></i></button>
+
+      </div>
+     </div>
     </div>
     ))}
     </div>

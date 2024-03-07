@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    background-image: url(./images/photo_5994772084988953083_y.jpg);
-    background-position: center center;
+  background-image: url('./images/light-patten.svg');
+  background-position: center center;
     background-size: cover;
     height: 100vh;
 }

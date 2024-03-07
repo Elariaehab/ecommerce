@@ -3,7 +3,7 @@ import styles from './footer.module.css'
 
 export default function Footer() {
   return (
-     <div className="bg-secondary px-5">
+     <div className="bg-secondary px-5 py-3 mt-3">
       <div className={`footer ${styles['footer-card']}`}>
       <h1>Get the FreshCart app</h1>
       <p>We will send you a link, open it on your phone to download the app</p>

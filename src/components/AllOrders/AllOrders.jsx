@@ -29,9 +29,10 @@ export default function AllOrders() {
                             allData.map((order, idx) => (
                               <div key={idx} className="col-md-6">
                                 <div className="inner p-3 bg-secondary rounded-2">
-                                  <p>phone : {order.shippingAddress.phone}</p>
-                                  <p>city : {order.shippingAddress.city}</p>
-                                  <p>details : {order.shippingAddress.details}</p>
+                                <p>phone : {order.user.phone}</p>
+                                  <p>Order Price : {order.totalOrderPrice} EGP</p>
+                                  {/* <p>city : {order.shippingAddress.city}</p> */}
+                                  {/* <p>details : {order.shippingAddress.details}</p> */}
                                   <p>payment Method Type : {order.paymentMethodType}</p>
                                   <div className="row">
                                     {order.cartItems.map((item, index) => (

@@ -17,6 +17,10 @@ import { Toaster } from 'react-hot-toast';
 import CartProvider from './Context/Auth/Cart/Cart';
 import Payment from './components/Payment/Payment';
 import AllOrders from './components/AllOrders/AllOrders';
+import ForgotPassword from './components/ForgotPassword/ForgotPassword';
+import Codeverification from './components/Codeverification/Codeverification';
+import ResetPassword from './components/ResetPassword/ResetPassword';
+import WishList from './components/WishList/WishList';
 
 
 let queryClent = new QueryClient()
@@ -25,8 +29,11 @@ let queryClent = new QueryClient()
 let router = createBrowserRouter([
  {path : "" , element: <Layout /> ,
   children: [
-  { index:true , element:<Home/>},
+  { index:true , element:<ProtectedRoute><Home/></ProtectedRoute>},
   {path: "Login", element: <Login />},
+  { path: 'forgotpassword', element: <ForgotPassword /> },
+  { path: 'codeverification', element: <Codeverification /> },
+  { path: 'resetpassword', element: <ResetPassword /> },
   {path: "Register", element: <Register />},
   {path: "details/:id", element:<ProtectedRoute>{""} <ProductDetails />{""}</ProtectedRoute>},
   {path: "Profile", element:<ProtectedRoute>{""}<Profile />{""}</ProtectedRoute>},
@@ -35,6 +42,7 @@ let router = createBrowserRouter([
   {path: "Cart", element:<ProtectedRoute>{""}<Cart/>{""}</ProtectedRoute> },
   {path: "Payment", element:<ProtectedRoute>{""}<Payment/>{""}</ProtectedRoute> },
   {path: "AllOrders", element:<ProtectedRoute>{""}<AllOrders/>{""}</ProtectedRoute> },
+  { path: 'wishlist', element: <ProtectedRoute><WishList /></ProtectedRoute>  },
   {path: "*", element: <NotFound/>},
  ],
 },
