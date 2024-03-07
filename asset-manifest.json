@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/ecommerce/static/css/main.c6313c87.css",
+    "main.js": "/ecommerce/static/js/main.007348e7.js",
+    "static/js/592.67290bcd.chunk.js": "/ecommerce/static/js/592.67290bcd.chunk.js",
+    "static/media/light-patten.svg": "/ecommerce/static/media/light-patten.ed706aff39a009de4e80.svg",
+    "static/media/fa-solid-900.ttf": "/ecommerce/static/media/fa-solid-900.45a265d0f07b31cde85f.ttf",
+    "static/media/SLIDER-1.jpg": "/ecommerce/static/media/SLIDER-1.82b5a95a65bfc9ebf722.jpg",
+    "static/media/fa-brands-400.ttf": "/ecommerce/static/media/fa-brands-400.6205fd00fb1b573e9f0f.ttf",
+    "static/media/fa-solid-900.woff2": "/ecommerce/static/media/fa-solid-900.fb8184add5a3101ad0a3.woff2",
+    "static/media/notfound.jpg": "/ecommerce/static/media/notfound.b2fe16c77f59906f80f8.jpg",
+    "static/media/fa-brands-400.woff2": "/ecommerce/static/media/fa-brands-400.8d3cabfc66809162fb4d.woff2",
+    "static/media/clothing-photography-mannequin-vs-model.jpg": "/ecommerce/static/media/clothing-photography-mannequin-vs-model.46d08c95efbabd7ddde2.jpg",
+    "static/media/fa-regular-400.ttf": "/ecommerce/static/media/fa-regular-400.adc51aab4d771ab65f81.ttf",
+    "static/media/fa-regular-400.woff2": "/ecommerce/static/media/fa-regular-400.e931bc0d14f5bbb1da22.woff2",
+    "static/media/fa-v4compatibility.ttf": "/ecommerce/static/media/fa-v4compatibility.2eb7b3ef25042305f3ff.ttf",
+    "static/media/fa-v4compatibility.woff2": "/ecommerce/static/media/fa-v4compatibility.b3049b13a93f07e026fc.woff2",
+    "static/media/slick.svg": "/ecommerce/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/ecommerce/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/ecommerce/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/ecommerce/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/ecommerce/index.html",
+    "main.c6313c87.css.map": "/ecommerce/static/css/main.c6313c87.css.map",
+    "main.007348e7.js.map": "/ecommerce/static/js/main.007348e7.js.map",
+    "592.67290bcd.chunk.js.map": "/ecommerce/static/js/592.67290bcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c6313c87.css",
+    "static/js/main.007348e7.js"
+  ]
+}
